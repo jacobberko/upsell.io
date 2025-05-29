@@ -6,12 +6,10 @@ export default function CheckoutPage() {
 
   const handleCheckout = async () => {
     setLoading(true)
-    // 1) Call your API to create the session
     const res = await fetch('/api/checkout', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      // you could send JSON here if you want dynamic price/qty:
-      // body: JSON.stringify({ priceId: 'price_abc123', quantity: 2 })
+      // body: JSON.stringify({ priceId: 'price_abc123', quantity: 1 })
     })
 
     if (!res.ok) {
@@ -21,7 +19,6 @@ export default function CheckoutPage() {
     }
 
     const { url } = await res.json()
-    // 2) Redirect the browser to Stripe Checkout
     window.location.href = url
   }
 
