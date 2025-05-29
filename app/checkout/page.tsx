@@ -5,21 +5,25 @@ export default function CheckoutPage() {
   const [loading, setLoading] = useState(false)
 
   const handleCheckout = async () => {
+    console.log('🔵 handleCheckout fired')
     setLoading(true)
-    const res = await fetch('/api/checkout', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      // body: JSON.stringify({ priceId: 'price_abc123', quantity: 1 })
-    })
-
-    if (!res.ok) {
-      console.error('Checkout session creation failed:', await res.text())
+    try {
+      const res = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        // body: JSON.stringify({ priceId: 'price_abc123', quantity: 1 })
+      })
+      console.log('🟢 fetch returned status:', res.status)
+      const text = await res.text()
+      console.log('🟢 fetch returned body:', text)
+      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`)
+      const { url } = JSON.parse(text)
+      console.log('🟢 session URL:', url)
+      window.location.href = url
+    } catch (err) {
+      console.error('🔴 Checkout error:', err)
       setLoading(false)
-      return
     }
-
-    const { url } = await res.json()
-    window.location.href = url
   }
 
   return (
