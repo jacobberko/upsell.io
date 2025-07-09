@@ -1,9 +1,12 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import { BookOpen, Clock, Star, TrendingUp, PlayCircle, Users, Target, Lightbulb } from 'lucide-react'
 import Navigation from '../../components/Navigation'
+import AuthModal from '../../components/AuthModal'
 
 export default function Guides() {
+  const [showAuthModal, setShowAuthModal] = useState(false)
+
   const guides = [
     {
       id: 1,
@@ -196,11 +199,19 @@ export default function Guides() {
         <div className="mt-12 bg-blue-600 rounded-lg p-8 text-center">
           <h2 className="text-2xl font-bold text-white mb-4">Ready to Start Your Reselling Journey?</h2>
           <p className="text-blue-100 mb-6">Join thousands of successful resellers who learned with our guides</p>
-          <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
+          <button 
+            onClick={() => setShowAuthModal(true)}
+            className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
+          >
             Get Full Access
           </button>
         </div>
       </div>
+
+      <AuthModal 
+        isOpen={showAuthModal} 
+        onClose={() => setShowAuthModal(false)} 
+      />
     </div>
   )
 }

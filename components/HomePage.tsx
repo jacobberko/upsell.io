@@ -1,8 +1,12 @@
-import React from 'react';
+'use client'
+import React, { useState } from 'react';
 import { Clock, CheckCircle, TrendingUp, Users, Zap, Target } from 'lucide-react';
 import Navigation from './Navigation';
+import AuthModal from './AuthModal';
 
 const HomePage = () => {
+  const [showAuthModal, setShowAuthModal] = useState(false)
+
   // Mock data for featured drops
   const featuredDrops = [
     {
@@ -214,7 +218,10 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to Start Making Money?</h2>
           <p className="text-blue-100 mb-8 text-lg">Join thousands of successful resellers. Start your 7-day free trial today.</p>
-          <button className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transform hover:scale-105 transition-all duration-200 shadow-lg">
+          <button 
+            onClick={() => setShowAuthModal(true)}
+            className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transform hover:scale-105 transition-all duration-200 shadow-lg"
+          >
             Get Started Free
           </button>
           <p className="text-blue-200 text-sm mt-4">Cancel anytime • No credit card required</p>
@@ -259,6 +266,11 @@ const HomePage = () => {
           </div>
         </div>
       </footer>
+
+      <AuthModal 
+        isOpen={showAuthModal} 
+        onClose={() => setShowAuthModal(false)} 
+      />
     </div>
   );
 };
