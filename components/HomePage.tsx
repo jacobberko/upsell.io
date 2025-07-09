@@ -132,9 +132,9 @@ const HomePage = () => {
                     <span className="text-green-600 font-medium text-sm">{drop.expectedProfit}</span>
                   </div>
                   
-                  <button className="w-full bg-gray-900 text-white py-2 px-4 rounded-lg hover:bg-gray-800 transition-colors duration-200">
+                  <a href="/guides" className="block w-full bg-gray-900 text-white py-2 px-4 rounded-lg hover:bg-gray-800 transition-colors duration-200 text-center">
                     Learn How to Buy
-                  </button>
+                  </a>
                 </div>
               </div>
             ))}
