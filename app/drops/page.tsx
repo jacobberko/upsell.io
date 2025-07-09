@@ -8,7 +8,7 @@ export default function Drops() {
     {
       id: 1,
       name: "Air Jordan 4 'Black Cat'",
-      image: "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=300&h=300&fit=crop&crop=center&q=80",
+      image: "/images/air-jordan-black-cat.jpg",
       dropDate: "2025-07-15T10:00:00Z",
       retailPrice: "$200",
       estimatedResale: "$320-480",
@@ -18,7 +18,7 @@ export default function Drops() {
     {
       id: 2,
       name: "PlayStation 5 Pro",
-      image: "https://images.unsplash.com/photo-1607853202273-797f1c22a38e?w=300&h=300&fit=crop&crop=center&q=80",
+      image: "/images/ps5-pro.jpg",
       dropDate: "2025-07-20T12:00:00Z",
       retailPrice: "$700",
       estimatedResale: "$900-1200",
@@ -28,7 +28,7 @@ export default function Drops() {
     {
       id: 3,
       name: "Supreme Box Logo Hoodie",
-      image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=300&h=300&fit=crop&crop=center&q=80",
+      image: "/images/supreme-hoodie.jpg",
       dropDate: "2025-07-18T11:00:00Z",
       retailPrice: "$168",
       estimatedResale: "$400-700",

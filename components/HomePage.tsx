@@ -8,7 +8,7 @@ const HomePage = () => {
     {
       id: 1,
       name: "Air Jordan 4 'Black Cat'",
-      image: "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=300&h=300&fit=crop&crop=center&q=80",
+      image: "/images/air-jordan-black-cat.jpg",
       dropDate: "2025-06-15T10:00:00Z",
       description: "Classic retro colorway, high resale value",
       difficulty: "Beginner",
@@ -17,7 +17,7 @@ const HomePage = () => {
     {
       id: 2,
       name: "PlayStation 5 Pro",
-      image: "https://images.unsplash.com/photo-1607853202273-797f1c22a38e?w=300&h=300&fit=crop&crop=center&q=80",
+      image: "/images/ps5-pro.jpg",
       dropDate: "2025-06-20T12:00:00Z",
       description: "Limited console release",
       difficulty: "Intermediate", 
@@ -26,7 +26,7 @@ const HomePage = () => {
     {
       id: 3,
       name: "Supreme Box Logo Hoodie",
-      image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=300&h=300&fit=crop&crop=center&q=80",
+      image: "/images/supreme-hoodie.jpg",
       dropDate: "2025-06-18T11:00:00Z", 
       description: "Weekly Supreme drop",
       difficulty: "Advanced",

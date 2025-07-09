@@ -8,7 +8,7 @@ export default function ResellHub() {
     {
       id: 1,
       name: "Air Jordan 4 'Black Cat'",
-      image: "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=300&h=300&fit=crop&crop=center&q=80",
+      image: "/images/air-jordan-black-cat.jpg",
       avgPrice: "$380",
       priceChange: "+12%",
       sales: "2,450",
@@ -17,7 +17,7 @@ export default function ResellHub() {
     {
       id: 2,
       name: "PlayStation 5 Pro",
-      image: "https://images.unsplash.com/photo-1607853202273-797f1c22a38e?w=300&h=300&fit=crop&crop=center&q=80",
+      image: "/images/ps5-pro.jpg",
       avgPrice: "$1,050",
       priceChange: "+8%",
       sales: "890",
@@ -26,7 +26,7 @@ export default function ResellHub() {
     {
       id: 3,
       name: "Supreme Box Logo Hoodie",
-      image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=300&h=300&fit=crop&crop=center&q=80",
+      image: "/images/supreme-hoodie.jpg",
       avgPrice: "$520",
       priceChange: "-5%",
       sales: "1,200",

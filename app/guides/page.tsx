@@ -13,7 +13,7 @@ export default function Guides() {
       difficulty: "Beginner",
       rating: 4.8,
       students: 2450,
-      thumbnail: "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=300&h=200&fit=crop&crop=center&q=80",
+      thumbnail: "/images/air-jordan-black-cat.jpg",
       category: "Sneakers"
     },
     {
@@ -24,7 +24,7 @@ export default function Guides() {
       difficulty: "Advanced",
       rating: 4.9,
       students: 1890,
-      thumbnail: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=300&h=200&fit=crop&crop=center&q=80",
+      thumbnail: "/images/supreme-hoodie.jpg",
       category: "Streetwear"
     },
     {
@@ -35,7 +35,7 @@ export default function Guides() {
       difficulty: "Intermediate",
       rating: 4.7,
       students: 1200,
-      thumbnail: "https://images.unsplash.com/photo-1607853202273-797f1c22a38e?w=300&h=200&fit=crop&crop=center&q=80",
+      thumbnail: "/images/ps5-pro.jpg",
       category: "Electronics"
     },
     {
