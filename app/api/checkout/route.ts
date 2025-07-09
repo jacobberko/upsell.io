@@ -9,7 +9,7 @@ export async function GET() {
 export async function POST(request: Request) {
   // Initialize Stripe at request time
   const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-    apiVersion: '2025-04-30.basil'
+    apiVersion: '2025-05-28.basil'
   })
   // You can also read JSON from the request if you want dynamic quantities:
   // const { priceId, quantity } = await request.json()
